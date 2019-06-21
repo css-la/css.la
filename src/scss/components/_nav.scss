@@ -20,7 +20,7 @@
     a {
       color: currentColor;
 
-      @include apply-utility('weight', 'mid');
+      @include apply-utility('weight', 'light');
 
       &:not(:hover) {
         text-decoration: none;

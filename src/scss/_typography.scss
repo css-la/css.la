@@ -20,7 +20,7 @@ h1,
 h2,
 h3 {
   @include apply-utility('font', 'base');
-  font-weight: 200;
+  @include apply-utility('weight', 'thin');
 }
 
 h1 {
