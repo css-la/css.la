@@ -1,7 +1,6 @@
 {% extends 'layouts/base.njk' %}
 {% set pageType = 'Homepage' %}
 {# Intro content #}
-{% include "partials/components/logo.njk" %}
 {% set introSummary %}
   {{ content | safe }}
 {% endset %}
@@ -18,6 +17,7 @@
 
 {% block content %}
   <main id="main-content" tabindex="-1">
+    {% include "partials/components/logo.njk" %}
     {% include "partials/components/intro.njk" %}
     {% include "partials/components/tinyletter.njk" %}
     {# {% include "partials/components/post-list.njk" %} #}
