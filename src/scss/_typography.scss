@@ -9,7 +9,7 @@
 }
 
 body {
-  // Strip the unit off the size ratioto generate a line height
+  // Strip the unit off the size ratio to generate a line height
   $line-height: get-size(600);
   line-height: $line-height / ($line-height * 0 + 1);
 
@@ -19,8 +19,7 @@ body {
 h1,
 h2,
 h3 {
-  @include apply-utility('font', 'base');
-  @include apply-utility('weight', 'bold');
+  @include apply-utility('weight', 'bold')
 }
 
 h1 {

@@ -6,13 +6,18 @@
       "external": false
     },
     {
-      "text": "Github",
+      "text": "GitHub",
       "url": "https://github.com/css-la/css-la",
       "external": true
     },
     {
       "text": "Twitter",
       "url": "https://twitter.com/cssdotla",
+      "external": true
+    },
+    {
+      "text": "Newsletter Signup",
+      "url": "https://tinyletter.com/cssdotla",
       "external": true
     },
     {
