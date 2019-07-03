@@ -9,9 +9,9 @@ socialImage: ''
 ## Welcome to CSS.la          
 CSS.la is Los Angeles' premier group for CSS and front-end enthusiasts. So far, CSS.la consists of a monthly-ish study group through [Learn Teach Code](https://www.meetup.com/LearnTeachCode/), a fantastic and supportive community of developers all over the Los Angeles area.
 
-## Upcoming
-Our next meetup is planned for July 31st at Black Tux. Please sign up for our email list below to be notified!
-
+## Upcoming meetups
+Our next meetup is planned for July 31st at Black Tux. Please sign up to our email list below to be notified!
+---
 ## Past meetups 
 (the newer ones with notes!)
 ### 2018
