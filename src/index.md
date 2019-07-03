@@ -23,4 +23,4 @@ Our next meetup is planned for July 31st at Black Tux. Please sign up for our em
 - [Learn about CSS and Browser Mechanics](https://www.meetup.com/LearnTeachCode/events/249510027/) @ Open Listings, April 25, 2018
   
 ## Want to get involved?    
-Have a question, concern, or would you like to help with CSS.la? Send an email to Scott Gruber hello@scottgruber.me.
+Have a question, concern, or would you like to help with CSS.la? Please contact [Scott](https://scottgruber.me) or [Jim](https://tobbi.co), on [github](https://github.com/css-la) or on [twitter](https://twitter.com/cssdotla).
