@@ -9,12 +9,18 @@ socialImage: ''
 ## Welcome to CSS.la          
 CSS.la is Los Angeles' premier group for CSS and front-end enthusiasts. So far, CSS.la consists of a monthly-ish study group through [Learn Teach Code](https://www.meetup.com/LearnTeachCode/), a fantastic and supportive community of developers all over the Los Angeles area.
 
-## Upcoming meetups
-Our next meetup is planned for July 31st at Black Tux. Please sign up to our email list below to be notified!
----
-## Past meetups 
-(the newer ones with notes!)
-### 2018
+## Upcoming meetups  
+Please sign up to our email list below for details!
+
+### July 31st at Black Tux
+Topic: CSS Grid
+
+### August 15th at WordPress Santa Monica
+Topic: WordPress, Flexbox and CSS Grid
+
+***
+
+## 2018
 - [CSS Grid](https://www.meetup.com/LearnTeachCode/events/255433621/) @ Open Listings, November 8, 2018, [Notes](https://paper.dropbox.com/doc/CSS.la-6-Using-CSS-Grid-Today--ARVrAD9w~dGrR_I_wu0gIfNPAg-kBtl03ocCi84NjDbs1dEB)
 - [a11y](https://www.meetup.com/LearnTeachCode/events/254676315/) @ Replicated, October 10, 2018, [Notes](https://paper.dropbox.com/doc/CSS.la-5-a11y-Accessibility--AO96X1eWzh9_V4eSEXhPC_nGAg-FWnNCYELcMICEuhZqkwng)
 - [Naming Conventions in CSS](https://www.meetup.com/LearnTeachCode/events/253679813/) @ Fender, September 12, 2018, [Notes](https://paper.dropbox.com/doc/CSS.la-4-Naming-Conventions-in-CSS--AMm_gQrSk6NDxcdnsPpeSD0BAg-NNwsgZES3OpJAOINatkO3)
