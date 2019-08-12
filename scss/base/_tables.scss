@@ -1,0 +1,28 @@
+// =====================================================
+//   Tablular data
+//   w3c.github.io/html/tabular-data.html
+// =====================================================
+
+table {
+  border-collapse: collapse;
+  margin: var(--spacing) 0;
+  table-layout: fixed;
+  width: 100%;
+}
+
+th {
+  border-bottom: var(--border-style-thin);
+  padding: var(--spacing) 0;
+  text-align: inline-start;
+}
+
+td {
+  border-bottom: var(--border-style-thin);
+  padding: var(--spacing) 0;
+}
+
+td,
+th,
+tr {
+  vertical-align: middle;
+}

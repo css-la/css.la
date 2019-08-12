@@ -1,0 +1,44 @@
+.l-home-intro p {
+  margin-block-start: 0;
+}
+
+.l-home-welcome-msg {
+  h2 {
+    font-size: var(--font-size-display);
+  }
+
+  p {
+    color: var(--color-text-alt);
+    font-size: var(--font-size-large);
+    font-weight: bolder;
+    line-height: 1.2;
+
+    &:first-of-type {
+      &::first-letter {
+        font-size: var(--font-size-x-large);
+        line-height: 1;
+      }
+    }
+  }
+
+  p:first-child {
+    color: var(--color-accent);
+  }
+}
+
+@media (min-width: 18em) {
+  .l-home-intro {
+    column-count: 3;
+    column-fill: balance;
+    column-gap: 1vw;
+    column-width: 15em;
+  }
+}
+
+.l-home img {
+  border-radius: var(--border-radius-circle);
+  float: inline-end;
+  max-width: 150px;
+  padding-block-start: var(--spacing);
+  shape-outside: circle(50%);
+}

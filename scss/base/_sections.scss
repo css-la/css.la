@@ -1,0 +1,117 @@
+// =====================================================
+//   Sections
+//   w3c.github.io/html/sections.html
+// ======================================================
+// body, header, nav, aside, footer, article, section
+
+html {
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+@supports (font-variation-settings: normal) {
+  html { 
+    font-family: 'Inter var', sans-serif; 
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  color: var(--color-black);
+  display: grid;
+  grid-template-areas:
+    "header"
+    "nav"
+    "main"
+    "aside"
+    "footer";
+  line-height: var(--line-height-text);
+}
+
+@media (min-width: 30em) {
+  body {
+    grid-template-areas:
+      ". header header header ."
+      ". nav nav nav ."
+      ". main main main aside"
+      ". footer footer footer aside";
+    grid-template-columns: 2fr 1fr 2fr 1fr 2fr;
+    grid-template-rows: minmax(20px, 1fr);
+  }
+}
+
+header[role="banner"] {
+  grid-area: header;
+}
+
+nav[role="navigation"] {
+  grid-area: nav;
+}
+
+nav[role="navigation"] ul {
+  align-content: space-around;
+  display: flex;
+  flex-wrap: wrap;
+  font-family: var(--font-family);
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav[role="navigation"] li {
+  flex: 1;
+  justify-content: center;
+}
+
+main {
+  grid-area: main;
+}
+
+aside {
+  grid-area: aside;
+}
+
+aside h2 {
+  font-size: var(--font-size-medium);
+}
+
+footer[role="contentinfo"] {
+  border-top: var(--border-style-thin);
+  grid-area: footer;
+  margin-block-start: var(--spacing-large);
+  padding: var(--spacing) 0;
+}
+
+
+.h-feed h1 {
+  font-size: var(--font-size-large);
+}
+
+.h-feed img[src$=".svg"] {
+  width: 20vw;
+}
+
+.bookmarks {
+  display: grid;
+  grid-gap: 1vw;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.bookmarks article {
+  // background: var(--color-primary-lighter);
+  padding: var(--spacing-medium);
+}
+
+.bookmarks article:focus,
+.bookmarks article:hover {
+  // background: var(--color-primary);
+}
+
+.bookmarks h1 {
+  font-size: var(--font-size);
+}

@@ -1,0 +1,29 @@
+{
+  "extends": [
+		"stylelint-config-recommended"
+	],
+  "plugins": [
+		"stylelint-a11y",
+		"stylelint-order",
+		"stylelint-use-logical"
+		
+	],
+	"rules": {
+		"a11y/media-prefers-reduced-motion": true,
+    "a11y/no-outline-none": true,
+    "a11y/selector-pseudo-class-focus": true,
+		"csstools/use-logical": true,
+		"indentation": [
+      2,
+      {
+        "message": "Please use two spaces for indentation.",
+        "severity": "warning"
+      }
+		],
+		"order/properties-alphabetical-order": true,
+		"order/order": [
+			"custom-properties",
+			"declarations"
+		]
+	}
+}

@@ -1,0 +1,27 @@
+/* =====================================================
+   Images, figures
+   =====================================================
+*/
+
+.avatar {
+  border-radius: 50%;
+  max-width: 100px;
+}
+
+.full-width {
+  inset-inline-end: 50%;
+  inset-inline-start: 50%;
+  margin-inline-end: -50vw;
+  margin-inline-start: -50vw;
+  position: relative;
+  width: 100vw;
+}
+
+.svg-cardinal {
+  height: 60vh;
+}
+
+.aspect-ratio {
+  height: calc(100vw * 9 / 16);
+  width: 100vw;
+}

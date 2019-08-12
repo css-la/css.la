@@ -1,0 +1,41 @@
+/* =====================================================
+   Heading content semantics
+   w3c.github.io/html/dom.html#heading-content
+   ===================================================== */
+
+// h1 h2 h3 h4 h5 h6
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-family-display);
+  line-height: var(--line-height-heading);
+}
+
+h1 {
+  color: var(--color-accent);
+  font-size: var(--font-size-xxxx-large);
+}
+
+h2,
+.logotype {
+  color: var(--color-black);
+  font-size: var(--font-size-xx-large);
+}
+
+h3 {
+  font-size: var(--font-size-large);
+}
+
+h4 {
+  font-size: var(--font-size-medium);
+  text-transform: uppercase;
+}
+
+h5,
+h6 {
+  font-size: var(--font-size);
+}

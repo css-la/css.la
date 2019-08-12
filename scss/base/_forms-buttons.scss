@@ -1,0 +1,36 @@
+button {
+  appearance: none;
+  background-color: var(--color-primary);
+  border: 0;
+  color: var(--color-white);
+  cursor: pointer;
+  display: inline-block;
+  font-family: var(--font-family-alt);
+  font-size: var(--font-size-small);
+  margin: 0;
+  padding: var(--spacing);
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: background-color var(--duration-quickly) var(--timing); //user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  button {
+    transition: none;
+  }
+}
+
+button:focus,
+button:hover {
+  background-color: var(--color-supporting);
+}
+
+button:active {
+  background-color: var(--color-supporting-dark);
+}
+
+button > a {
+  color: var(--color-white);
+}

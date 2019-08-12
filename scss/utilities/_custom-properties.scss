@@ -1,0 +1,169 @@
+/* CSS Custom Properties */
+
+:root {
+  /* Typography */
+  --font-family: 'Inter', sans-serif;
+  --font-family-alt: serif;
+  --font-family-display: var(--font-family);
+  --font-weight-thin: 200;
+  --font-weight-light: 300;
+  --font-weight-regular: 400;
+  --font-weight-bold: 700;
+  --font-weight-xbold: 800;
+  --font-weight-black: 900;
+  --text-base-size: 1rem;
+  --text-scale-ratio: 1.125;
+  --line-height-text: 1.5;
+  --line-height-heading: 1.2;
+
+  /* Type scale 8:9 major second scale 1.125 */
+  --font-size-xxx-display: 4.11rem;
+  --font-size-xx-display: 3.653rem;
+  --font-size-xx-display: 3.247rem;
+  --font-size-x-display: 2.887rem;
+  --font-size-display: 2.566rem;
+  --font-size-xxxx-large: 2.281rem;
+  --font-size-xxx-large: 2.027rem;
+  --font-size-xx-large: 1.802rem;
+  --font-size-x-large: 1.602rem;
+  --font-size-large: 1.424rem;
+  --font-size-medium: 1.125rem;
+  --font-size: 1rem;
+  --font-size-small: 0.889rem;
+  --font-size-x-small: 0.79rem;
+
+  /* Dark Mode Primary Colour */
+  --color-primary-lighter: hsl(247, 25%, 80%); // #C2BFD9 194 191 217
+  --color-primary-light: hsl(247, 25%, 60%); //#8580B3 133 128 179
+  --color-primary: hsl(247, 25%, 50%); // #67609F 103 96 159
+  --color-primary-dark: hsl(247, 25%, 30%); // #3E3960 62 57 96
+  --color-primary-darker: hsl(247, 25%, 25%); // #343050 52 48 80
+
+  /* Now an supporting colour: */
+  --color-supporting-lighter: hsl(46, 13%, 80%); //#D3D0C5 211 208 197
+  --color-supporting-light: hsl(46, 13%, 70%); //#BCB8A9  188 184 169
+  --color-supporting: hsl(46, 13%, 62%); //#ABA591 RGB 171 165 145
+  --color-supporting-dark: hsl(46, 13%, 30%); // #565243 86 82 67
+  --color-supporting-darker: hsl(46, 13%, 20%); // #3A372C 58 55 44
+
+  /* Secondary colour: */
+  --color-secondary-lighter: hsl(70, 50%, 80%); // #DDE6B3 RGB:  221 230 179
+  --color-secondary-light: hsl(70, 50%, 65%); // #C4D279 RGB: 196 210 121
+  --color-secondary: hsl(70, 50%, 50%); // #AABF40 170 191 64
+  --color-secondary-dark: hsl(70, 50%, 40%); // #889933 RGB: 136 153 51
+  --color-secondary-darker: hsl(70, 50%, 30%); // #667326 RGB: 102 115 38
+
+  /* Primary Colour */
+
+  --color-alt-primary: hsl(253, 100%, 33%); // #2500AA 37 0 170
+  --color-alt-primary-light: hsl(253, 100%, 43%); //#3000DB 48 0 219
+  --color-alt-primary-lighter: hsl(253, 100%, 53%); // #430FFF 67 15 255
+  --color-alt-primary-dark: hsl(253, 100%, 23%); // #1A0075 26 0 117
+  --color-alt-primary-darker: hsl(253, 100%, 13%); // #0F0047 15 0 71
+
+  /* Now an supporting colour: */
+
+  --color-alt-supporting: hsl(336, 100%, 49%); //#FA0064 RGB 250 0 100
+  --color-alt-supporting-light: hsl(336, 100%, 59%); //#FF2E81  255, 46, 129
+  --color-alt-supporting-lighter: hsl(336, 100%, 69%); //#FF619F 255, 97, 159
+  --color-alt-supporting-dark: hsl(336, 100%, 39%); // #C7004E 199, 0, 78
+  --color-alt-supporting-darker: hsl(336, 100%, 29%); // #94003A 148 0 58
+
+  /* Secondary colour: */
+
+  --color-alt-secondary: #ffcb00; // HSL: 48° 100% 50% RGB: 255 203 0 Tangerine
+  --color-alt-secondary-light: #fff551; // HSL: 57° 100% 66% RGB: 255 245 81 Lemon Yellow
+  --color-alt-secondary-lighter: #fffd82; // HSL: 59° 100% 75% RGB: 255 253 130 Faded Yellow
+  --color-alt-secondary-dark: #ff9f00; // HSL: 37° 100% 50% RGB: 255 159 0 Orange Peel
+  --color-alt-secondary-darker: #ff7a00; // HSL: 29° 100% 50% RGB: 255 122 0 Flush Orange
+
+  /* Black and white: */
+  --color-black: #1c1c21;
+  --color-white: #fff;
+
+  /* Neutral colour: */
+
+  --color-neutral: #f7f4Eb; // HSL: 244° 12% 51% RGB: 117 115 144 Storm Grey
+  --color-neutral-dark: #353351; // HSL: 244° 23% 26% RGB: 53 51 81 Martinique
+  --color-neutral-darker: #18162c; // HSL: 245° 33% 13% RGB: 24 22 44 Mirage
+  --color-neutral-light: #b4b2ce; // HSL: 244° 22% 75% RGB: 180 178 206 Cadet Blue or Vietnamese Monk Blue
+  --color-neutral-lighter: #d6d5ea; // HSL: 243° 33% 88% RGB: 214 213 234 Hawkes Blue
+
+  /* And two pairs of colours for type, one to contrast against light backgrounds
+   and another for dark backgrounds. */
+
+  --color-text-default: var(--color-black);
+  --color-text-alt: var(--color-neutral-lighter);
+  
+  /* Links
+// ========================================== */
+
+  --color-text-link: var(--color-alt-primary);
+  --color-text-link-active: var(--color-alt-supporting-darker);
+  --color-text-link-focus: var(--color-supporting-light);
+  --color-text-link-hover: var(---color-alt-supporting-dark);
+  --color-text-link-visited: var(--color-alt-secondary-darker);
+  
+  /* Background colours
+// ========================================== */
+
+  --color-background: var(--color-neutral-dark);
+  --color-background-alt: var(--color-neutral-light);
+  
+  /* Border colours
+// ========================================== */
+
+  --color-border: var(--color-neutral-dark);
+  --color-border-separator: var(--color-accent-lighter);
+
+  /* Borders
+// ========================================== */
+
+  --border-radius-x-small: 0.25rem;
+  --border-radius-small: 0.5rem;
+  --border-radius-medium: 0.75rem;
+  --border-radius-large: 1rem;
+  --border-radius-circle: 50%;
+  --border-width-hairline: 0.5px;
+  --border-width-thin: 1px;
+  --border-width-thick: 3px;
+  --border-style-thin: var(--border-width-thin) solid var(--color-border);
+  --border-style-thick: var(--border-width-thick) solid var(--color-border);
+
+  /* Spacing
+// ========================================== */
+  --max-width: 90rem;
+  --spacing-xx-small: 0.125rem;
+  --spacing-x-small: 0.25rem;
+  --spacing-small: 0.5rem;
+  --spacing: 0.75rem;
+  --spacing-medium: 1rem;
+  --spacing-large: 1.5rem;
+  --spacing-x-large: 2rem;
+  --spacing-xx-large: 3rem;
+
+  /* Timing
+// ========================================== */
+
+  --duration-instantly: 0;
+  --duration-immediately: 0.05s;
+  --duration-quickly: 0.1s;
+  --duration-promptly: 0.2s;
+  --duration-slowly: 0.4s;
+  --timing: ease;
+}
+
+@media (min-width: 100em) {
+  :root {
+    --font-size-display: 9.969rem;
+    --font-size-xxxx-large: 7.478rem;
+    --font-size-xxx-large: 5.61rem;
+    --font-size-xx-large: 4.209rem;
+    --font-size-x-large: 3.157rem;
+    --font-size-large: 2.369rem;
+    --font-size-medium: 1.777rem;
+    --font-size: 1.333rem;
+    --font-size-small: 1rem;
+    --font-size-x-small: 0.9rem;
+  }
+}

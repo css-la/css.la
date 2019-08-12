@@ -1,0 +1,41 @@
+.c-tweets {
+  display: grid;
+
+  @media (min-width: 48em) {
+    grid-gap: 1em;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0 0 var(--spacing-medium);
+  }
+
+  @media (min-width: 64em) {
+    grid-gap: 1.2em;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 0 0 2em;
+  }
+
+  list-style: none;
+  margin: var(--spacing-medium);
+  padding: 0;
+}
+
+.c-tweet {
+  margin-block-end: var(--spacing-large);
+  padding-inline-start: 0;
+
+  a {
+    text-decoration: none;
+  }
+}
+
+// .c-cards-list {}
+// .c-card {}
+// .c-card__title {}
+// .c-card__subhead {}
+// .c-card__byline {}
+// .c-card__action {}
+// .c-card__image {}
+// .c-card__description {}
+// .c-card__date {
+//   font-weight: bold;
+//   color: $secondary-color;
+// }

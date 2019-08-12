@@ -1,0 +1,23 @@
+/* =====================================================
+   Quotes
+   w3c.github.io/html/textlevel-semantics.html
+   =====================================================
+*/
+
+.quote p,
+.quote h2 {
+  quotes: '“' '”' '‘' '‘';
+}
+
+.quote p::before,
+.quote h2::before {
+  content: open-quote;
+  font-size: var(--font-size-display);
+  margin-inline-start: -0.83ch;
+}
+
+.quote p::after,
+.quote h2::after {
+  content: close-quote;
+  font-size: var(--font-size-display);
+}

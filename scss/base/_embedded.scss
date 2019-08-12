@@ -1,0 +1,24 @@
+// =====================================================
+//   Embedded content
+//   w3c.github.io/html/semantics-embedded-content.html
+//   =====================================================
+// picture, source, img, iframe, embed, object, param, video, audio, track, map, area, svg
+figure {
+  margin: auto;
+  width: min-content;
+}
+
+figcaption {
+  font-weight: bold;
+}
+
+img,
+picture {
+  margin: 0;
+  max-width: 100%;
+}
+
+footer img[src$=".svg"] {
+  height: auto;
+  width: 3em;
+}

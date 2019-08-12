@@ -1,0 +1,110 @@
+// =====================================================
+//   Forms
+//   w3c.github.io/html/sec-forms.html
+//   ===================================================== */
+
+// form, label, input, button, select, datalist, optgroup, option, textarea, output, progress, meter, fieldset, legend
+
+form {
+  border: var(--border-style-thin);
+  margin: var(--spacing) 0;
+  padding: var(--spacing-medium);
+}
+
+fieldset {
+  background-color: transparent;
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+legend {
+  margin-block-end: var(--spacing-x-small);
+  padding: 0;
+}
+
+label {
+  display: block;
+  font-family: var(--font-family-alt);
+  font-weight: 700;
+  margin-block-end: var(--spacing-small);
+  text-transform: uppercase;
+}
+
+input,
+select,
+textarea {
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  padding: var(--spacing-small);
+}
+
+select[multiple] {
+  background-color: var(--color-background);
+  border: var(--border-width-thin) solid var(--color-border);
+  box-sizing: border-box;
+  margin: 0 0 var(--spacing-x-small);
+  padding: var(--spacing-x-small);
+  transition: border-color var(--duration-promptly) var(--timing);
+  width: 100%;
+
+  &:hover {
+    border-color: shade(--color-border, 20%);
+  }
+
+  &:focus {
+    border-color: var(--color-supporting);
+    box-shadow: var(--color-base);
+    outline: none;
+  }
+
+  &:disabled {
+    background-color: var(--color-background);
+    cursor: not-allowed;
+
+    &:focus,
+    &:hover {
+      border: var(--border-width-thin) solid var(--color-border);
+    }
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  select[multiple] {
+    transition: none;
+  }
+}
+
+textarea {
+  resize: vertical;
+}
+
+[type='search'] {
+  appearance: none;
+}
+
+[type='checkbox'],
+[type='radio'] {
+  display: inline;
+  margin-inline-end: var(--spacing-x-small);
+}
+
+[type='file'] {
+  margin-block-end: var(--spacing-x-small);
+  width: 100%;
+}
+
+select {
+  margin-block-end: var(--spacing-x-small);
+  max-width: 100%;
+  width: auto;
+}
+
+.c-signup {
+  border: var(--border-style-thin);
+  padding: var(--spacing);
+}
+
+.c-signup input {
+  padding: var(--spacing);
+}

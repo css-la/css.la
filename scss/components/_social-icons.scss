@@ -1,0 +1,10 @@
+// social icons svg
+
+a > .icon {
+  fill: var(--color-supporting-lighter);
+}
+
+a > .icon:focus,
+a > .icon:hover {
+  fill: var(--color-supporting);
+}

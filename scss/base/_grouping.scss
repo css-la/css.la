@@ -1,0 +1,41 @@
+// =====================================================
+//   Grouping content
+//   w3c.github.io/html/grouping-content.html
+// =====================================================
+// p, address, hr, pre, blockquote, ol, ul, li, dl, dt, dd, figure, figcaption, main, div
+
+ol,
+ul {
+  // list-style: none;
+  padding: 0;
+}
+
+ul > li {
+  margin: 0 0 var(--spacing-small);
+}
+
+dl {
+  margin: 0;
+}
+
+dt {
+  font-weight: 700;
+  margin: 0;
+}
+
+dd {
+  margin: 0;
+}
+
+blockquote {
+  border-left: var(--border-style-thick);
+  padding-inline-start: var(--spacing-large);
+}
+
+main {
+  margin: 0;
+}
+
+pre {
+  max-width: 40em;
+}

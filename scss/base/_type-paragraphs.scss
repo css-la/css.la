@@ -1,0 +1,16 @@
+/* =====================================================
+   Paragraphs semantics
+   w3c.github.io/html/textlevel-semantics.html
+   ===================================================== */
+
+p {
+  font-size: var(--font-size);
+}
+
+.standfirst {
+  font-size: var(--font-size-medium);
+}
+
+.lede {
+  font-size: var(--font-size-large);
+}

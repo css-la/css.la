@@ -1,0 +1,36 @@
+// =====================================================
+//   Links
+//   w3c.github.io/html/links.html
+// =====================================================
+
+a:link {
+  color: var(--color-text-link);
+  // text-decoration: underline;
+}
+
+a:active {
+  color: var(--color-text-link-hover);
+}
+
+a:hover {
+  color: var(--color-text-link-hover);
+}
+
+a:focus {
+  color: var(--color-text-link-active);
+  outline: thin dotted;
+}
+
+a:visited {
+  color: var(--color-text-link-visited);
+}
+
+.logotype a {
+  color: var(--color-text-alt);
+  text-decoration: none;
+}
+
+.logotype a:focus,
+.logotype a:hover {
+  color: var(--color-text-link-accent);
+}
